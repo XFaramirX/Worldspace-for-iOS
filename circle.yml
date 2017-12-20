@@ -12,3 +12,5 @@ test:
     post:
         - mkdir -p $CIRCLE_TEST_REPORTS/reports
         - xsltproc -o $CIRCLE_TEST_REPORTS/reports/report.xml plist_to_junit.xsl ./DerivedData/Logs/Test/*_TestSummaries.plist
+
+        
