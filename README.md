@@ -13,26 +13,26 @@ WorldSpace for iOS is a Swift framework. Most of the features are also designed 
 
 ### Fetching Framework
 
-To make switching to new versions of the Framework and keep from pushing the library to VCS systems check out our framework fetch script.
+To make switching to new versions of the Framework and keep from pushing the library to VCS systems, check out our framework fetch script.
 
-[Curl WorldSpace Framework](https://github.com/dequelabs/AttestIOSApp/blob/master/Scripts/CurlFramework.sh)
+[Curl WorldSpace Framework](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/Scripts/CurlFramework.sh)
 
 ## Unit Testing Examples
 
 Unit testing with the WorldSpace for iOS Framework is easy! Check out the examples below.
 
-[A simple Accessibility Test](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/SimpleTest.swift)
+[A simple Accessibility Test](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/SimpleTest.swift)
 
-[Ignore Specific Violations](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/IgnoreViolations.swift)
+[Ignore Specific Violations](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/IgnoreViolations.swift)
 
-[Custom Rules](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSAppTests/CustomRules.swift)
+[Custom Rules](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/CustomRules.swift)
 
 ## UI Testing Examples
 
 Coming soon!
 
 ## Test Using the Desktop Client
-[Starting the WorldSpace Server](https://github.com/dequelabs/AttestIOSApp/blob/master/AttestiOSApp/AppDelegate.swift)
+[Starting the WorldSpace Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)
 
 [Syncing Results with the WorldSpace Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
 
