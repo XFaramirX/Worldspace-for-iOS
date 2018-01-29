@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Change this to the version of the framework you want.
-FRAMEWORK_VERSION=1.1.1
+FRAMEWORK_VERSION=1.1.2
 
 
 #The version of Xcode you want to fetch the framework for (Xcode9.0 or Xcode9.1)

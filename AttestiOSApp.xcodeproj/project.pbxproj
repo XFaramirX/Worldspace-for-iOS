@@ -42,6 +42,7 @@
 		EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */; };
 		EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
 		EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
+		EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE74858C200E644200A9E571 /* ObjectiveCTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelActiveControls.swift; sourceTree = "<group>"; };
 		EE5BB7E01FBC887800486581 /* LabelAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAssociation.swift; sourceTree = "<group>"; };
 		EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTargetSize.swift; sourceTree = "<group>"; };
+		EE74858C200E644200A9E571 /* ObjectiveCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
+		EECC6FA01FEB0B80003DB415 /* AttestiOSAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttestiOSAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,7 +228,9 @@
 		0FCBDEA01F9E6C350059DB83 /* AttestiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				EECC6FA01FEB0B80003DB415 /* AttestiOSAppTests-Bridging-Header.h */,
 				0FCBDEA31F9E6C350059DB83 /* Info.plist */,
+				EE74858C200E644200A9E571 /* ObjectiveCTests.m */,
 				0F69FB941FA9AD2F00A07BA4 /* SimpleTest.swift */,
 				0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */,
 				0F12A7061FBB4DAD00932780 /* IgnoreRules.swift */,
@@ -319,6 +324,7 @@
 					};
 					0FCBDE9C1F9E6C350059DB83 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0FCBDE881F9E6C350059DB83;
 					};
@@ -443,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4A029701FAA3E0D0057D4C2 /* Constants.swift in Sources */,
+				EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */,
 				0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */,
 				0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */,
 				0F12A7071FBB4DAD00932780 /* IgnoreRules.swift in Sources */,
@@ -627,6 +634,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -634,6 +642,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AttestiOSAppTests/AttestiOSAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AttestiOSApp.app/AttestiOSApp";
@@ -645,6 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -652,6 +663,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AttestiOSAppTests/AttestiOSAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AttestiOSApp.app/AttestiOSApp";
