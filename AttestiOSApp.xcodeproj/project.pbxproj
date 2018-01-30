@@ -43,6 +43,7 @@
 		EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
 		EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
 		EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE74858C200E644200A9E571 /* ObjectiveCTests.m */; };
+		EE8CF109201FB97F0020F398 /* DemoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8CF108201FB97F0020F398 /* DemoUITest.swift */; };
 		EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */; };
 		EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */; };
 		EED8361020193B41002C5D1C /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
@@ -131,6 +132,7 @@
 		EE5BB7E01FBC887800486581 /* LabelAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAssociation.swift; sourceTree = "<group>"; };
 		EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTargetSize.swift; sourceTree = "<group>"; };
 		EE74858C200E644200A9E571 /* ObjectiveCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
+		EE8CF108201FB97F0020F398 /* DemoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITest.swift; sourceTree = "<group>"; };
 		EECC6FA01FEB0B80003DB415 /* AttestiOSAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttestiOSAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRulesUITest.swift; sourceTree = "<group>"; };
 		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				0FCBDEAC1F9E6C350059DB83 /* SimpleUITest.swift */,
 				EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */,
 				EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */,
+				EE8CF108201FB97F0020F398 /* DemoUITest.swift */,
 			);
 			path = AttestiOSAppUITests;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			files = (
 				EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */,
 				0FCBDEAD1F9E6C350059DB83 /* SimpleUITest.swift in Sources */,
+				EE8CF109201FB97F0020F398 /* DemoUITest.swift in Sources */,
 				EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

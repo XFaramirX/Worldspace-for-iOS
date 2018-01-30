@@ -72,7 +72,7 @@ class MenuViewController: UITableViewController {
         if indexPath.section == DEMO_IDENTIFIER_NUM {
             cell = tableView.dequeueReusableCell(withIdentifier: DEMO_IDENTIFIER, for: indexPath)
             cellLabel = cell.viewWithTag(DEMO_TITLE_TAG) as! UILabel
-            cellLabel.text = "Attest for iOS"
+            cellLabel.text = "Worldspace for iOS"
         } else {
             let demoName = Demos.values()[indexPath.row].viewControllerName()
 
@@ -84,7 +84,10 @@ class MenuViewController: UITableViewController {
 
             // setting accessibility label
             let demoTab = String.localizedStringWithFormat(" %tu of ", indexPath.row + 1)
-            cell.accessibilityLabel = cellLabel.text! + demoTab + String.localizedStringWithFormat("%lu", Demos.names().count)
+            cell.accessibilityLabel = "\(cellLabel.text!), \(demoTab) \(String.localizedStringWithFormat("%lu", Demos.names().count))"
+            
+            // Setting accessibility identifier
+            cell.accessibilityIdentifier = cellLabel.text!
         }
         
         let selectedView = UIView()

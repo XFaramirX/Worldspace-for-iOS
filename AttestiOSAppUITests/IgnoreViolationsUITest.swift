@@ -11,14 +11,15 @@ import Attest
 
 class IgnoreViolationsUITest: XCTestCase {
     
-    let LABEL_ASSOCIATION = "LabelAssociation 9 of 14"
+    // Accessibility Identifier of LabelAssociation Demo
+    let LABEL_ASSOCIATION = "LabelAssociation"
         
     override func setUp() {
         super.setUp()
 
         continueAfterFailure = false
         XCUIApplication().launch()
-        XCUIApplication().tables.cells[LABEL_ASSOCIATION].tap() // Open Label Association Demo
+        XCUIApplication().tables.cells.matching(identifier: LABEL_ASSOCIATION).firstMatch.tap() // Open Label Association Demo
 
     }
     

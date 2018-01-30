@@ -11,7 +11,8 @@ import Attest
 
 class IgnoreRulesUITest: XCTestCase {
     
-    let CONTRAST_ALPHA_BLEND = "ContrastAlphaBlend 3 of 14"
+    // Accessibililty identifier of ContrastAlphaBlend Demo
+    let CONTRAST_ALPHA_BLEND = "ContrastAlphaBlend"
         
     override func setUp() {
         super.setUp()
@@ -19,8 +20,7 @@ class IgnoreRulesUITest: XCTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
         
-        // Click on a view controller
-        XCUIApplication().tables.cells[CONTRAST_ALPHA_BLEND].tap() // Open Contrast Alpha Blend Demo
+        XCUIApplication().tables.cells.matching(identifier: CONTRAST_ALPHA_BLEND).firstMatch.tap() // Open Contrast Alpha Blend Demo
     }
     
     //Set up a list of Rule IDs to ignore.

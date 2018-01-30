@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--OverlappingA1 1y Frame-->
+        <!--View Controller-->
         <scene sceneID="FUI-fy-33r">
             <objects>
-                <viewController storyboardIdentifier="OverlappingA11yFrame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w5H-4j-ETQ" customClass="OverlappingA11yFrame" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlappingA11yFrame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w5H-4j-ETQ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EjM-wf-eNl"/>
                         <viewControllerLayoutGuide type="bottom" id="SmZ-Xw-t4x"/>
@@ -287,7 +287,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE4-KN-dWL">
                                 <rect key="frame" x="0.0" y="28" width="375" height="639"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informative Control Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2E3-Ue-0bA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overlapping Label Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2E3-Ue-0bA">
                                         <rect key="frame" x="20" y="20" width="335" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
@@ -487,10 +487,10 @@
             </objects>
             <point key="canvasLocation" x="1250" y="28"/>
         </scene>
-        <!--Overlap Through View-->
+        <!--View Controller-->
         <scene sceneID="rgA-wK-dSa">
             <objects>
-                <viewController storyboardIdentifier="OverlapThroughView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gab-f3-Jal" customClass="OverlapThroughView" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OverlapThroughView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gab-f3-Jal" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lCO-hS-MMo"/>
                         <viewControllerLayoutGuide type="bottom" id="1Uh-CN-9D3"/>
@@ -634,15 +634,6 @@
                             <constraint firstItem="6Y7-Dx-DR4" firstAttribute="centerX" secondItem="ohj-6Z-de1" secondAttribute="centerX" id="yyr-5V-UEr"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="brokenButton" destination="UA9-ZB-6G3" id="jgQ-cK-YmF"/>
-                        <outlet property="brokenDescription" destination="nqd-XR-o8s" id="14Y-Pn-bMr"/>
-                        <outlet property="brokenLabel" destination="iQB-05-jqU" id="lpb-pL-eM3"/>
-                        <outlet property="fixedButton" destination="l3y-Cp-azj" id="dNK-58-jxi"/>
-                        <outlet property="fixedDescription" destination="e0F-PS-DQj" id="XBq-UY-Xwt"/>
-                        <outlet property="fixedLabel" destination="ciK-ig-t9j" id="GTD-JA-kCi"/>
-                        <outlet property="viewTitle" destination="6Y7-Dx-DR4" id="IBE-l6-4Ej"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9L-0h-QgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
