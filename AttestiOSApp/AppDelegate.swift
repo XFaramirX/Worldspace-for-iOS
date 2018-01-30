@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         //Start the attest server in debug mode to use the desktop client.
-        Attest.startServer(48484)
+        Attest.startHTTPServer(48484)
     }
 }
 

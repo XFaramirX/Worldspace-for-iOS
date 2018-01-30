@@ -14,6 +14,7 @@
 
 @implementation ObjCTests
 
+/* The most simple test. Load the initial storyboard of main. The default isAccessible() call throws an exception on failure. */
 - (void) testSimple {
     [[Attest thatWithStoryBoardName: @"Main" viewControllerID: NULL bundle: NULL]
      isAccessible: ^(Result* result) {
@@ -21,14 +22,29 @@
      }];
 }
 
+/* Ignore a violation for a particular rule. */
 - (void) testAndIgnoreSingleViolation {
     [[Attest thatWithStoryBoardName:@"AccessibilityHint" viewControllerID:@"LabelAssociation" bundle:NULL]
      isAccessible: ^(Result* result) {
          for (RuleResult* ruleResult in result.ruleResults) {
              switch (ruleResult.rule.ruleId) {
+                 
+                 // We're allowing one accessibility hint violation
                  case RuleIDAccessibilityHint:
                      XCTAssertEqual(1, ruleResult.violations.count, @"%@", ruleResult.description);
                      break;
+                 
+                 // We're allowing this rule to be inapplicable to the view controller
+                 case RuleIDTouchTargetSize:
+                    XCTAssertEqual(ImpactInapplicable, ruleResult.impact, @"%@", ruleResult.description);
+                    break;
+
+                // We're allowing this rule to be inapplicable to the view controller
+                 case RuleIDCustomRule:
+                    XCTAssertEqual(ImpactInapplicable, ruleResult.impact, @"%@", ruleResult.description);
+                    break;
+                 
+                 // Everything else must pass
                  default:
                      XCTAssertEqual(ImpactPass, ruleResult.impact, @"%@", ruleResult.description);
                      break;
@@ -36,5 +52,4 @@
          }
      }];
 }
-
 @end

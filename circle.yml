@@ -2,6 +2,10 @@ machine:
     xcode:
         version: 9.1
 
+dependencies:
+    pre:
+      - sh ./Scripts/CurlFramework.sh -v master
+
 test:
     pre:
         - open /Applications/Xcode.app/Contents/Applications/Accessibility\ Inspector.app/

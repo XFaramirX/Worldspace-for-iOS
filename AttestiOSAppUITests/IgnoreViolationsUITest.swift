@@ -1,13 +1,34 @@
+//
+//  IgnoreViolationsUITest.swift
+//  AttestiOSAppUITests
+//
+//  Created by Jennifer Dailey on 1/24/18.
+//  Copyright © 2018 Deque Systems Inc. All rights reserved.
+//
+
 import XCTest
 import Attest
 
-class IgnoreViolations: XCTestCase {
+class IgnoreViolationsUITest: XCTestCase {
+    
+    let LABEL_ASSOCIATION = "LabelAssociation 9 of 14"
+        
+    override func setUp() {
+        super.setUp()
 
+        continueAfterFailure = false
+        XCUIApplication().launch()
+        XCUIApplication().tables.cells[LABEL_ASSOCIATION].tap() // Open Label Association Demo
+
+    }
+    
     /* Ignore a violation for a particular rule. */
-    func testAndIgnoreSingleViolation() {
-
-        Attest.that(storyBoardName: "AccessibilityHint", viewControllerID: "LabelAssociation").isAccessible({(result:Attest.Result) -> () in
-
+    func testUIAndIgnoreSingleViolation() {
+        
+        Attest.that(portNumber: 48484).isAccessible({(result:Attest.Result) -> () in
+            
+            print(result.description)
+            
             for ruleResult in result.ruleResults {
                 switch (ruleResult.rule.ruleId) {
                 case .AccessibilityHint:

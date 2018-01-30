@@ -29,7 +29,7 @@
 		0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */; };
 		0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */; };
 		0F69FB9B1FA9AD7B00A07BA4 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */; };
-		0FCBDEAD1F9E6C350059DB83 /* AttestiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEAC1F9E6C350059DB83 /* AttestiOSAppUITests.swift */; };
+		0FCBDEAD1F9E6C350059DB83 /* SimpleUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEAC1F9E6C350059DB83 /* SimpleUITest.swift */; };
 		0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */; };
 		0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
 		0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */; };
@@ -43,6 +43,10 @@
 		EE5BB7E61FBC887800486581 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
 		EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
 		EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE74858C200E644200A9E571 /* ObjectiveCTests.m */; };
+		EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */; };
+		EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */; };
+		EED8361020193B41002C5D1C /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
+		EED8361220193C2B002C5D1C /* Attest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EED8361120193C22002C5D1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EED8361220193C2B002C5D1C /* Attest.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +104,7 @@
 		0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDEA31F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FCBDEAC1F9E6C350059DB83 /* AttestiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestiOSAppUITests.swift; sourceTree = "<group>"; };
+		0FCBDEAC1F9E6C350059DB83 /* SimpleUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUITest.swift; sourceTree = "<group>"; };
 		0FCBDEAE1F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -118,6 +132,8 @@
 		EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTargetSize.swift; sourceTree = "<group>"; };
 		EE74858C200E644200A9E571 /* ObjectiveCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
 		EECC6FA01FEB0B80003DB415 /* AttestiOSAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttestiOSAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRulesUITest.swift; sourceTree = "<group>"; };
+		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED8361020193B41002C5D1C /* Attest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +260,10 @@
 		0FCBDEAB1F9E6C350059DB83 /* AttestiOSAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0FCBDEAC1F9E6C350059DB83 /* AttestiOSAppUITests.swift */,
 				0FCBDEAE1F9E6C350059DB83 /* Info.plist */,
+				0FCBDEAC1F9E6C350059DB83 /* SimpleUITest.swift */,
+				EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */,
+				EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */,
 			);
 			path = AttestiOSAppUITests;
 			sourceTree = "<group>";
@@ -297,6 +316,7 @@
 				0FCBDEA41F9E6C350059DB83 /* Sources */,
 				0FCBDEA51F9E6C350059DB83 /* Frameworks */,
 				0FCBDEA61F9E6C350059DB83 /* Resources */,
+				EED8361120193C22002C5D1C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -405,7 +425,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -d \"./Framework/Release/Attest.framework\" ]; then\n    exit 0\nfi\n\nif [ -d \"../AttestIOS.xcodeproj\" ]; then\n    #If the direcotry is there build the framework from Attest IOS project.\n    pushd ..\n    sh ./Scripts/build.sh\nelse\n    #If the directory isn't there fetch the framework from Agora.\n    rm -rf Framework\n    sh ./Scripts/CurlFramework.sh\nfi\n\n";
+			shellScript = "if [ -d \"../AttestIOS.xcodeproj\" ]; then\n    #If the direcotry is there build the framework from Attest IOS project.\n    pushd ..\n    sh ./Scripts/build.sh\nelse\n    #If the directory isn't there fetch the framework from Agora.\n    sh ./Scripts/CurlFramework.sh\nfi\n\n";
 		};
 		0F4249F61FB0C87100B8CCD7 /* Open Accessibility Inspector */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -462,7 +482,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCBDEAD1F9E6C350059DB83 /* AttestiOSAppUITests.swift in Sources */,
+				EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */,
+				0FCBDEAD1F9E6C350059DB83 /* SimpleUITest.swift in Sources */,
+				EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -617,7 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -675,10 +697,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework/Release",
 				);
 				INFOPLIST_FILE = AttestiOSAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -695,10 +718,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework/Release",
 				);
 				INFOPLIST_FILE = AttestiOSAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
