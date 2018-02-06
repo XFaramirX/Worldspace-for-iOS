@@ -65,6 +65,13 @@
 			remoteGlobalIDString = 0FCBDE881F9E6C350059DB83;
 			remoteInfo = AttestiOSApp;
 		};
+		EE6D5FB3202A35AF001CFE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCBDE811F9E6C350059DB83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6D5FAF202A351E001CFE9C;
+			remoteInfo = Clean;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -273,6 +280,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		EE6D5FAF202A351E001CFE9C /* Clean */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "${PROJECT_DIR}/Scripts/Clean.sh";
+			buildConfigurationList = EE6D5FB2202A351E001CFE9C /* Build configuration list for PBXLegacyTarget "Clean" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Clean;
+			passBuildSettingsInEnvironment = 1;
+			productName = Clean;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		0FCBDE881F9E6C350059DB83 /* AttestiOSApp */ = {
 			isa = PBXNativeTarget;
@@ -287,6 +311,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EE6D5FB4202A35AF001CFE9C /* PBXTargetDependency */,
 			);
 			name = AttestiOSApp;
 			productName = AttestiOSApp;
@@ -356,6 +381,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0FCBDE881F9E6C350059DB83;
 					};
+					EE6D5FAF202A351E001CFE9C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0FCBDE841F9E6C350059DB83 /* Build configuration list for PBXProject "AttestiOSApp" */;
@@ -374,6 +403,7 @@
 				0FCBDE881F9E6C350059DB83 /* AttestiOSApp */,
 				0FCBDE9C1F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEA71F9E6C350059DB83 /* AttestiOSAppUITests */,
+				EE6D5FAF202A351E001CFE9C /* Clean */,
 			);
 		};
 /* End PBXProject section */
@@ -505,6 +535,11 @@
 			target = 0FCBDE881F9E6C350059DB83 /* AttestiOSApp */;
 			targetProxy = 0FCBDEA91F9E6C350059DB83 /* PBXContainerItemProxy */;
 		};
+		EE6D5FB4202A35AF001CFE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6D5FAF202A351E001CFE9C /* Clean */;
+			targetProxy = EE6D5FB3202A35AF001CFE9C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -629,7 +664,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -647,7 +682,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.AttestiOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -738,6 +773,33 @@
 			};
 			name = Release;
 		};
+		EE6D5FB0202A351E001CFE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE6D5FB1202A351E001CFE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,6 +835,15 @@
 			buildConfigurations = (
 				0FCBDEB81F9E6C350059DB83 /* Debug */,
 				0FCBDEB91F9E6C350059DB83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6D5FB2202A351E001CFE9C /* Build configuration list for PBXLegacyTarget "Clean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6D5FB0202A351E001CFE9C /* Debug */,
+				EE6D5FB1202A351E001CFE9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
