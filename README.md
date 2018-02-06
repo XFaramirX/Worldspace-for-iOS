@@ -3,7 +3,7 @@ This application contains a series of simple ViewControllers that demonstrates t
 
 NOTE: The version of the framework you will fetch is functionally limited. You will get reports from every rule on the number of violations, but will only get debugging information for the Color Contrast rule. Contact a Deque representative if you're interested in licensing WorldSpace for iOS and gaining access to this information for the other rules.
 
-WorldSpace for iOS Libarry 1.0 Branch: [![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
+WorldSpace for iOS Library 1.0 Branch: [![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
 
 Build Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs/Worldspace-for-iOS.svg?style=svg&circle-token=8a49ac2e2745bcbe633fa7e2b69bf5844d677bbf)](https://circleci.com/gh/dequelabs/Worldspace-for-iOS)
 
@@ -11,7 +11,17 @@ Build Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs
 
 WorldSpace for iOS is a Swift framework. Most of the features are also designed to work in Objective C. Link to it like you would any other framework.
 
+### Sign Up for Free Trial
+
+An API key is required in order to access the framework.  If you have not already, sign up for a [free trial](https://accessibility.deque.com/ios-accessibility-testing-free-trial) to receive this key, which will be emailed to you.
+
 ### Fetching Framework
+
+Once you have your API key, export it as an environment variable into .bash_profile:
+
+```bash
+export DEQUE_ANON_APIKEY=EMAILED_API_KEY
+```
 
 To make switching to new versions of the Framework and keep from pushing the library to VCS systems, check out our framework fetch script.
 
