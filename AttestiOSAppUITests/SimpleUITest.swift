@@ -21,6 +21,6 @@ class SimpleUITest: XCTestCase {
     }
     
     func testUISimple() {
-        Attest.that(portNumber: 48484).isAccessible()
+        Attest.that(portNumber: 8080).isAccessible()
     }
 }

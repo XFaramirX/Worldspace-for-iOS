@@ -26,7 +26,7 @@ class IgnoreViolationsUITest: XCTestCase {
     /* Ignore a violation for a particular rule. */
     func testUIAndIgnoreSingleViolation() {
         
-        Attest.that(portNumber: 48484).isAccessible({(result:Attest.Result) -> () in
+        Attest.that(portNumber: 8080).isAccessible({(result:Attest.Result) -> () in
             
             print(result.description)
             

@@ -42,6 +42,6 @@ class IgnoreRulesUITest: XCTestCase {
     
     //Testing using the above function as the result consumer.
     func testUISuccessfullyIgnoringRules() {
-        Attest.that(portNumber:48484).isAccessible(IgnoreRulesUITest.resultConsumer)
+        Attest.that(portNumber:8080).isAccessible(IgnoreRulesUITest.resultConsumer)
     }
 }

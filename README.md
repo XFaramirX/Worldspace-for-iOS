@@ -27,9 +27,19 @@ Unit testing with the WorldSpace for iOS Framework is easy! Check out the exampl
 
 [Custom Rules](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/CustomRules.swift)
 
-## UI Testing Examples
+## UI Instrumented Test Examples
 
-Coming soon!
+[Starting the WorldSpace HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)
+
+[A simple Accessibility Test](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppUITests/SimpleUITest.swift)
+
+[Ignore Specific Violations](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppUITests/IgnoreViolationsUITest.swift)
+
+## Test Using the HTTP Server
+
+After [starting the HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift), visit
+
+[http://localhost:8080/report/analyze.html](http://localhost:8080/report/analyze.html) to view results!
 
 ## Test Using the Desktop Client
 [Starting the WorldSpace Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)

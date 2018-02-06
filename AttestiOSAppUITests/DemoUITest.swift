@@ -54,7 +54,7 @@ class DemoUITest: XCTestCase {
             app.tables.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
             
             //For each demo, assert that it has one violation per rule listed in the NumberOfExpectedViolation Dictionary
-            Attest.that(portNumber: 48484).isAccessible({ result in
+            Attest.that(portNumber: 8080).isAccessible({ result in
                 
                 for ruleResult in result.ruleResults {
                     
