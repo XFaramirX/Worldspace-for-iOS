@@ -25,6 +25,8 @@ fi
 mkdir -p $FRAMEWORK_DIR
 pushd $FRAMEWORK_DIR
 
+source ~/.bash_profile
+
 #Fetch the library zip with our anonymous api key.
 curl -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" \
 	-O "https://agora.dequecloud.com/artifactory/AttestIOSFree/framework/$XCODE_VERSION/Attest.framework-$FRAMEWORK_VERSION.zip"
