@@ -45,6 +45,8 @@ Unit testing with the WorldSpace for iOS Framework is easy! Check out the exampl
 
 [Ignore Specific Violations](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppUITests/IgnoreViolationsUITest.swift)
 
+[Highlight Violations During Instrumented Tests](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/AttestiOSAppUITests/DemoUITest.swift)
+
 ## Test Using the HTTP Server
 
 After [starting the HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift), visit
@@ -55,6 +57,15 @@ After [starting the HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS
 [Starting the WorldSpace Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)
 
 [Syncing Results with the WorldSpace Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
+
+## Test Using Calabash
+In XCode, build the "AttestiOSApp-cal" target for the simulator device that Calabash will use (iPhone 7 with iOS 11.0.1 is default for Calabash).
+
+Next, run Calabash as you normally would.  If it hangs the first time you run it, exit out of Calabash and try again.
+
+[See an example of a Feature file using Attest here](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/features/AttestExample.feature)
+
+[See the Attest Calabash Step file here](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/features/steps/Attest.rb)
 
 ## Known Issues
 

@@ -32,8 +32,30 @@ class DemoUITest: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        continueAfterFailure = false
         XCUIApplication().launch()
+    }
+    
+    // Highlights a violation for one second
+    func highlightViolation(_ violationName: String) {
+                
+        if let url = NSURL(string: "http://localhost:8080/api/highlight/\(violationName)") {
+            let group = DispatchGroup()
+            group.enter()
+            
+            let task = URLSession.shared.dataTask(with: URLRequest(url: url as URL), completionHandler: {data, response, error in
+                
+                // Environment variable HIGHLIGHT_TIME is set to 1 (second) in project settings
+                if let sleepTime = UInt32(ProcessInfo.processInfo.environment["HIGHLIGHT_TIME"]!) {
+                    sleep(sleepTime)
+                }
+                group.leave()
+            })
+            task.resume()
+            group.wait()
+
+            let urlRequest = URLRequest(url: NSURL(string: "http://localhost:8080/api/remove_highlight")! as URL)
+            URLSession.shared.dataTask(with: urlRequest).resume()
+        }
     }
     
     func testUIAllDemos() {
@@ -57,6 +79,11 @@ class DemoUITest: XCTestCase {
             Attest.that(portNumber: 8080).isAccessible({ result in
                 
                 for ruleResult in result.ruleResults {
+                    
+                    // Highlight each violation for one second before asserting the number of violations
+                    for violation in ruleResult.violations {
+                        highlightViolation(violation.target)
+                    }
                     
                     if ruleIDs.contains(ruleResult.rule.ruleId) {
                         XCTAssertEqual(1, ruleResult.violations.count, ruleResult.description)

@@ -2,3 +2,9 @@ AttestiOSApp.xcodeproj/xcuserdata
 Framework
 DerivedData
 AttestiOSApp.xcodeproj/project.xcworkspace/xcuserdata
+AttestiOSApp.xcodeproj/xcshareddata
+Gemfile.lock
+calabash.framework
+*.png
+.irb-history
+build

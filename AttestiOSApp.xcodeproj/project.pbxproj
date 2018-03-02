@@ -48,6 +48,35 @@
 		EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */; };
 		EED8361020193B41002C5D1C /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
 		EED8361220193C2B002C5D1C /* Attest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEE2FBFB2034EB6E004F3913 /* LabelActiveControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DF1FBC887800486581 /* LabelActiveControls.swift */; };
+		EEE2FBFC2034EB6E004F3913 /* A11yStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEEA1F9E6EDB0059DB83 /* A11yStepper.swift */; };
+		EEE2FBFD2034EB6E004F3913 /* TypeAdjustingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4F11A61FA2A437005D6D4B /* TypeAdjustingView.swift */; };
+		EEE2FBFE2034EB6E004F3913 /* TouchTargetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E11FBC887800486581 /* TouchTargetSize.swift */; };
+		EEE2FBFF2034EB6E004F3913 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */; };
+		EEE2FC002034EB6E004F3913 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */; };
+		EEE2FC012034EB6E004F3913 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC01F9E6EA70059DB83 /* MenuViewController.swift */; };
+		EEE2FC022034EB6E004F3913 /* InformativeFocusableControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */; };
+		EEE2FC032034EB6E004F3913 /* ElementInFocusBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */; };
+		EEE2FC042034EB6E004F3913 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */; };
+		EEE2FC052034EB6E004F3913 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
+		EEE2FC062034EB6E004F3913 /* LabelAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7E01FBC887800486581 /* LabelAssociation.swift */; };
+		EEE2FC072034EB6E004F3913 /* VoiceOverNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */; };
+		EEE2FC092034EB6E004F3913 /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
+		EEE2FC0B2034EB6E004F3913 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */; };
+		EEE2FC0C2034EB6E004F3913 /* AccessibilityHint.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDED51F9E6ED90059DB83 /* AccessibilityHint.storyboard */; };
+		EEE2FC0D2034EB6E004F3913 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5E4FD31F9E86D20054CB04 /* Media.xcassets */; };
+		EEE2FC0E2034EB6E004F3913 /* ColorContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEDC1F9E6ED90059DB83 /* ColorContrast.storyboard */; };
+		EEE2FC0F2034EB6E004F3913 /* ConflictingTraits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE01F9E6EDA0059DB83 /* ConflictingTraits.storyboard */; };
+		EEE2FC102034EB6E004F3913 /* Overlap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEF51F9E6EDC0059DB83 /* Overlap.storyboard */; };
+		EEE2FC112034EB6E004F3913 /* DynamicType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEF01F9E6EDC0059DB83 /* DynamicType.storyboard */; };
+		EEE2FC122034EB6E004F3913 /* InHighlight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE61F9E6EDA0059DB83 /* InHighlight.storyboard */; };
+		EEE2FC132034EB6E004F3913 /* NestedA11yElements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEED1F9E6EDB0059DB83 /* NestedA11yElements.storyboard */; };
+		EEE2FC142034EB6E004F3913 /* SpeakableText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF011F9E6EDD0059DB83 /* SpeakableText.storyboard */; };
+		EEE2FC152034EB6E004F3913 /* TouchTargetSize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */; };
+		EEE2FC162034EB6E004F3913 /* VoiceOverNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE31F9E6EDA0059DB83 /* VoiceOverNavigation.storyboard */; };
+		EEE2FC172034EB6E004F3913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF081F9E6F120059DB83 /* Main.storyboard */; };
+		EEE2FC192034EB6E004F3913 /* Attest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEE2FC212034EE4E004F3913 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE2FC202034EE44004F3913 /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +95,13 @@
 			remoteInfo = AttestiOSApp;
 		};
 		EE6D5FB3202A35AF001CFE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FCBDE811F9E6C350059DB83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE6D5FAF202A351E001CFE9C;
+			remoteInfo = Clean;
+		};
+		EEE2FBF82034EB6E004F3913 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0FCBDE811F9E6C350059DB83 /* Project object */;
 			proxyType = 1;
@@ -94,6 +130,17 @@
 			files = (
 				EED8361220193C2B002C5D1C /* Attest.framework in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE2FC182034EB6E004F3913 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEE2FC192034EB6E004F3913 /* Attest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -143,6 +190,8 @@
 		EECC6FA01FEB0B80003DB415 /* AttestiOSAppTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttestiOSAppTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRulesUITest.swift; sourceTree = "<group>"; };
 		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
+		EEE2FC1D2034EB6E004F3913 /* AttestiOSApp-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AttestiOSApp-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE2FC202034EE44004F3913 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED8361020193B41002C5D1C /* Attest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE2FC082034EB6E004F3913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE2FC212034EE4E004F3913 /* CFNetwork.framework in Frameworks */,
+				EEE2FC092034EB6E004F3913 /* Attest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +280,7 @@
 				0FCBDEA01F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEAB1F9E6C350059DB83 /* AttestiOSAppUITests */,
 				0FCBDE8A1F9E6C350059DB83 /* Products */,
+				EEE2FC1F2034EE44004F3913 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +290,7 @@
 				0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */,
 				0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */,
 				0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */,
+				EEE2FC1D2034EB6E004F3913 /* AttestiOSApp-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +336,14 @@
 				EE8CF108201FB97F0020F398 /* DemoUITest.swift */,
 			);
 			path = AttestiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		EEE2FC1F2034EE44004F3913 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2FC202034EE44004F3913 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +424,27 @@
 			productReference = 0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EEE2FBF62034EB6E004F3913 /* AttestiOSApp-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE2FC1A2034EB6E004F3913 /* Build configuration list for PBXNativeTarget "AttestiOSApp-cal" */;
+			buildPhases = (
+				EE098A212036025300134C95 /* Download Calabash Framework */,
+				EEE2FBF92034EB6E004F3913 /* Build Attest Library */,
+				EEE2FBFA2034EB6E004F3913 /* Sources */,
+				EEE2FC082034EB6E004F3913 /* Frameworks */,
+				EEE2FC0A2034EB6E004F3913 /* Resources */,
+				EEE2FC182034EB6E004F3913 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE2FBF72034EB6E004F3913 /* PBXTargetDependency */,
+			);
+			name = "AttestiOSApp-cal";
+			productName = AttestiOSApp;
+			productReference = EEE2FC1D2034EB6E004F3913 /* AttestiOSApp-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,6 +474,9 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					EEE2FBF62034EB6E004F3913 = {
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0FCBDE841F9E6C350059DB83 /* Build configuration list for PBXProject "AttestiOSApp" */;
@@ -401,6 +493,7 @@
 			projectRoot = "";
 			targets = (
 				0FCBDE881F9E6C350059DB83 /* AttestiOSApp */,
+				EEE2FBF62034EB6E004F3913 /* AttestiOSApp-cal */,
 				0FCBDE9C1F9E6C350059DB83 /* AttestiOSAppTests */,
 				0FCBDEA71F9E6C350059DB83 /* AttestiOSAppUITests */,
 				EE6D5FAF202A351E001CFE9C /* Clean */,
@@ -443,6 +536,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EEE2FC0A2034EB6E004F3913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE2FC0B2034EB6E004F3913 /* LaunchScreen.storyboard in Resources */,
+				EEE2FC0C2034EB6E004F3913 /* AccessibilityHint.storyboard in Resources */,
+				EEE2FC0D2034EB6E004F3913 /* Media.xcassets in Resources */,
+				EEE2FC0E2034EB6E004F3913 /* ColorContrast.storyboard in Resources */,
+				EEE2FC0F2034EB6E004F3913 /* ConflictingTraits.storyboard in Resources */,
+				EEE2FC102034EB6E004F3913 /* Overlap.storyboard in Resources */,
+				EEE2FC112034EB6E004F3913 /* DynamicType.storyboard in Resources */,
+				EEE2FC122034EB6E004F3913 /* InHighlight.storyboard in Resources */,
+				EEE2FC132034EB6E004F3913 /* NestedA11yElements.storyboard in Resources */,
+				EEE2FC142034EB6E004F3913 /* SpeakableText.storyboard in Resources */,
+				EEE2FC152034EB6E004F3913 /* TouchTargetSize.storyboard in Resources */,
+				EEE2FC162034EB6E004F3913 /* VoiceOverNavigation.storyboard in Resources */,
+				EEE2FC172034EB6E004F3913 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -473,6 +586,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "open /Applications/Xcode.app/Contents/Applications/Accessibility\\ Inspector.app/";
+		};
+		EE098A212036025300134C95 /* Download Calabash Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Download Calabash Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d \"calabash.framework\" ]; then\n    exit 0\nfi\n\neval \"$(rbenv init -)\"\nbundle\nbundle exec calabash-ios download";
+		};
+		EEE2FBF92034EB6E004F3913 /* Build Attest Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Attest Library";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#If it already exists, leave it alone\nif [ -d \"./Framework/Release/Attest.framework\" ]; then\n    exit 0\nfi\n\nif [ -d \"../AttestIOS.xcodeproj\" ]; then\n    #If the direcotry is there build the framework from Attest IOS project.\n    pushd ..\n    sh ./Scripts/build.sh\nelse\n    #If the directory isn't there fetch the framework from Agora.\n    sh ./Scripts/CurlFramework.sh -v 1.2.0\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -522,6 +663,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EEE2FBFA2034EB6E004F3913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE2FBFB2034EB6E004F3913 /* LabelActiveControls.swift in Sources */,
+				EEE2FBFC2034EB6E004F3913 /* A11yStepper.swift in Sources */,
+				EEE2FBFD2034EB6E004F3913 /* TypeAdjustingView.swift in Sources */,
+				EEE2FBFE2034EB6E004F3913 /* TouchTargetSize.swift in Sources */,
+				EEE2FBFF2034EB6E004F3913 /* AppDelegate.swift in Sources */,
+				EEE2FC002034EB6E004F3913 /* MainViewController.swift in Sources */,
+				EEE2FC012034EB6E004F3913 /* MenuViewController.swift in Sources */,
+				EEE2FC022034EB6E004F3913 /* InformativeFocusableControls.swift in Sources */,
+				EEE2FC032034EB6E004F3913 /* ElementInFocusBox.swift in Sources */,
+				EEE2FC042034EB6E004F3913 /* BorderedView.swift in Sources */,
+				EEE2FC052034EB6E004F3913 /* Constants.swift in Sources */,
+				EEE2FC062034EB6E004F3913 /* LabelAssociation.swift in Sources */,
+				EEE2FC072034EB6E004F3913 /* VoiceOverNavigation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -539,6 +700,11 @@
 			isa = PBXTargetDependency;
 			target = EE6D5FAF202A351E001CFE9C /* Clean */;
 			targetProxy = EE6D5FB3202A35AF001CFE9C /* PBXContainerItemProxy */;
+		};
+		EEE2FBF72034EB6E004F3913 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE6D5FAF202A351E001CFE9C /* Clean */;
+			targetProxy = EEE2FBF82034EB6E004F3913 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -661,7 +827,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQEKUJ838Q;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Framework/Release",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS";
@@ -679,7 +848,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQEKUJ838Q;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/Release";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Framework/Release",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AttestiOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS";
@@ -800,6 +972,60 @@
 			};
 			name = Release;
 		};
+		EEE2FC1B2034EB6E004F3913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Framework/Release",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AttestiOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEE2FC1C2034EB6E004F3913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Framework/Release",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = AttestiOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Worldspace-for-iOS-cal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -844,6 +1070,15 @@
 			buildConfigurations = (
 				EE6D5FB0202A351E001CFE9C /* Debug */,
 				EE6D5FB1202A351E001CFE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE2FC1A2034EB6E004F3913 /* Build configuration list for PBXNativeTarget "AttestiOSApp-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE2FC1B2034EB6E004F3913 /* Debug */,
+				EEE2FC1C2034EB6E004F3913 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
