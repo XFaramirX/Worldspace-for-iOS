@@ -8,7 +8,7 @@ jobs:
             - checkout
             - run:
                 name: Retrieve Attest Framework
-                command: sh ./Scripts/CurlFramework.sh -v master
+                command: sh ./Scripts/CurlFramework.sh
 
             - run:
                 name: Open Accessibility Inspector
