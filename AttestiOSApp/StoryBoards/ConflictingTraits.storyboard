@@ -32,7 +32,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsp-Jx-eNL" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="29.5" y="50.5" width="316.5" height="82"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-od-Bdc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-od-Bdc" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="107" y="10" width="104" height="62"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES" link="YES"/>
@@ -64,7 +64,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD3-pI-pwv" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="29.5" y="349" width="316.5" height="82"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyi-qi-ktb">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyi-qi-ktb" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="107" y="10" width="104" height="62"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" link="YES"/>

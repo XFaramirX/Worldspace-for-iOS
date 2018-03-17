@@ -3,8 +3,6 @@ This application contains a series of simple ViewControllers that demonstrates t
 
 NOTE: The version of the framework you will fetch is functionally limited. You will get reports from every rule on the number of violations, but will only get debugging information for the Color Contrast rule. Contact a Deque representative if you're interested in licensing WorldSpace for iOS and gaining access to this information for the other rules.
 
-WorldSpace for iOS Library 1.0 Branch: [![1.0 CirclCI](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0.svg?style=shield&circle-token=317c78a2f327205f252a20d18e71b84516e2c912)](https://circleci.com/gh/dequelabs/AttestIOS/tree/1.0)
-
 Build Status for this Repository: [![CircleCI](https://circleci.com/gh/dequelabs/Worldspace-for-iOS.svg?style=svg&circle-token=8a49ac2e2745bcbe633fa7e2b69bf5844d677bbf)](https://circleci.com/gh/dequelabs/Worldspace-for-iOS)
 
 ## Building with WorldSpace for iOS
@@ -23,7 +21,17 @@ Once you have your API key, export it as an environment variable into .bash_prof
 export DEQUE_ANON_APIKEY=EMAILED_API_KEY
 ```
 
-To make switching to new versions of the Framework and keep from pushing the library to VCS systems, check out our framework fetch script.
+Also add an environment variable into your .bash_profile with the version of the framework that you would like to fetch:
+
+```bash
+export DEQUE_ATTEST_IOS_VERSION="1.2.1"
+```
+
+Check out the list of releases for more information.
+
+[Release List](https://github.com/dequelabs/Worldspace-for-iOS/releases)
+
+To keep from pushing the library to VCS systems, check out our framework fetch script.
 
 [Curl WorldSpace Framework](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/Scripts/CurlFramework.sh)
 
@@ -59,7 +67,7 @@ After [starting the HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS
 [Syncing Results with the WorldSpace Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
 
 ## Test Using Calabash
-In XCode, build the "AttestiOSApp-cal" target for the simulator device that Calabash will use (iPhone 7 with iOS 11.0.1 is default for Calabash).
+In XCode, build the "AttestiOSApp-cal" target for the simulator device that Calabash will use (iPhone 7 is default for Calabash).
 
 Next, run Calabash as you normally would.  If it hangs the first time you run it, exit out of Calabash and try again.
 

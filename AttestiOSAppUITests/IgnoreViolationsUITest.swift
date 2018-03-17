@@ -20,13 +20,12 @@ class IgnoreViolationsUITest: XCTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
         XCUIApplication().tables.cells.matching(identifier: LABEL_ASSOCIATION).firstMatch.tap() // Open Label Association Demo
-
     }
     
     /* Ignore a violation for a particular rule. */
     func testUIAndIgnoreSingleViolation() {
         
-        Attest.that(portNumber: 8080).isAccessible({(result:Attest.Result) -> () in
+        Attest.that(portNumber: HTTP_PORT_NUMBER).isAccessible({(result:Attest.Result) -> () in
             
             print(result.description)
             
@@ -35,15 +34,11 @@ class IgnoreViolationsUITest: XCTestCase {
                 case .AccessibilityHint:
                     //We're allowing one accessibility hint violation
                     XCTAssertEqual(1, ruleResult.violations.count, ruleResult.description)
-                case .TouchTargetSize:
-                    // We're allowing this rule to be seen as inapplicable to this view controller
-                    XCTAssertEqual(Impact.Inapplicable.name(), ruleResult.impact.name(), ruleResult.description)
-                case .CustomRule:
-                    // We're allowing this rule to be seen as inapplicable to this view controller
-                    XCTAssertEqual(Impact.Inapplicable.name(), ruleResult.impact.name(), ruleResult.description)
                 default:
-                    //Everything else must pass.
-                    XCTAssertEqual(Impact.Pass.name(), ruleResult.impact.name(), ruleResult.description)
+                    // Everything else must pass, be incomplete, or inapplicable
+                    XCTAssert(Impact.Pass.name() == ruleResult.impact.name() ||
+                        Impact.Inapplicable.name() == ruleResult.impact.name() ||
+                        Impact.Incomplete.name() == ruleResult.impact.name(), ruleResult.description)
                 }
             }
         })

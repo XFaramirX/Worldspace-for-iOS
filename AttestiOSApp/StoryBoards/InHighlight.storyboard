@@ -32,7 +32,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cr-lj-apZ" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="40" y="51" width="296" height="82"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-ZC-LDT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-ZC-LDT" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="105.5" y="10" width="85" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="VP5-Jd-QWD"/>
@@ -60,7 +60,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-7B-aax" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
                                         <rect key="frame" x="40" y="239.5" width="296" height="82"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o99-ms-Dlw">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o99-ms-Dlw" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="101.5" y="10" width="93" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="62" id="Zcs-I7-Hwh"/>

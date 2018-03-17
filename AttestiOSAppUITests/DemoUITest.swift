@@ -19,13 +19,13 @@ class DemoUITest: XCTestCase {
         "ContrastAlphaBlendText"    : [ RuleID.ColorContrast ],
         "ContrastLargeText"         : [ RuleID.ColorContrast ],
         "DynamicTypeSystemFont"     : [ RuleID.DynamicType ],
-        "ElementInFocusBox"         : [ RuleID.InHighlight ],
+        "ElementInFocusBox"         : UIDevice.current.userInterfaceIdiom == .pad ? [ RuleID.InHighlight, RuleID.Overlap ] : [ RuleID.InHighlight ],
         "LabelActiveControls"       : [ RuleID.SpeakableText ],
         "LabelAssociation"          : [ RuleID.AccessibilityHint ],
         "LabelInformativeControls"  : [ RuleID.SpeakableText ],
-        "NestedElements"            : [ RuleID.DontIntersect, RuleID.NestedA11yElements ],
-        "OverlappingButton"         : [ RuleID.DontIntersect ],
-        "OverlappingLabel"          : [ RuleID.DontIntersect ],
+        "NestedElements"            : [ RuleID.Overlap, RuleID.NestedA11yElements ],
+        "OverlappingButton"         : [ RuleID.Overlap ],
+        "OverlappingLabel"          : [ RuleID.Overlap ],
         "TouchTargetSize"           : [ RuleID.TouchTargetSize ]
     ]
         
@@ -75,8 +75,11 @@ class DemoUITest: XCTestCase {
             // Open a demo
             app.tables.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
             
+            sleep(1) // Have to wait one second to avoid race conditions in some simulators
+            
             //For each demo, assert that it has one violation per rule listed in the NumberOfExpectedViolation Dictionary
-            Attest.that(portNumber: 8080).isAccessible({ result in
+            //Port number is defined in SimpleUITest and in AppDelegate.
+            Attest.that(portNumber: HTTP_PORT_NUMBER).isAccessible({ result in
                 
                 for ruleResult in result.ruleResults {
                     
@@ -93,7 +96,10 @@ class DemoUITest: XCTestCase {
                 }
             })
             
-            app.navigationBars.buttons.element(boundBy: 0).tap() // Go back to menu
+            // Go back to menu if using an iPhone (not an iPad)
+            if UIDevice.current.userInterfaceIdiom == .phone {
+                app.navigationBars.buttons.element(boundBy: 0).tap()
+            }
         }
     }
 }

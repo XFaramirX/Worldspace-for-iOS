@@ -53,14 +53,14 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bei-Us-fJg">
-                                        <rect key="frame" x="20" y="140" width="334.5" height="108.5"/>
+                                        <rect key="frame" x="20" y="140" width="334.5" height="101.5"/>
                                         <string key="text">This UIImageView is marked as an accessibility element, but does not have an accessibility label.  No additional information can be given to VoiceOver users regarding this element.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojL-9B-2r5" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="258.5" width="315" height="79.5"/>
+                                        <rect key="frame" x="30" y="251.5" width="315" height="79.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HSG-QI-IxD">
                                                 <rect key="frame" x="78.5" y="10" width="158" height="59.5"/>
@@ -81,7 +81,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-Hp-AdV">
-                                        <rect key="frame" x="20" y="348" width="334.5" height="130.5"/>
+                                        <rect key="frame" x="20" y="341" width="334.5" height="122"/>
                                         <string key="text">This UIImageView portrays essential information to the user, so it must be marked as an accessibility element.  To portray this important information to VoiceOver users, an accessibility label has been added.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
@@ -190,14 +190,14 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-RU-9LM">
-                                        <rect key="frame" x="20" y="153" width="336" height="86.5"/>
+                                        <rect key="frame" x="20" y="153" width="336" height="81.5"/>
                                         <string key="text">The button to the right links to Google.  Notice how it does not have an accessibility label.  No information will be given to VoiceOver users regarding this element.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-oa-V4Z" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="29.5" y="249.5" width="316" height="82"/>
+                                        <rect key="frame" x="29.5" y="244.5" width="316" height="82"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRj-zG-Eir">
                                                 <rect key="frame" x="10" y="10" width="296" height="62"/>
@@ -252,7 +252,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0O-Kl-VCj">
-                                        <rect key="frame" x="20" y="342" width="336" height="86.5"/>
+                                        <rect key="frame" x="20" y="337" width="336" height="81.5"/>
                                         <string key="text">Here, the label and the button is grouped and accessible by VoiceOver.  When tabbed over, VoiceOver will announce "Google, Link."</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>

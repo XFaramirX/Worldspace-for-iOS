@@ -35,7 +35,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLU-RA-HWm" customClass="BorderedView" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="295" height="82"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFf-bM-YBQ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFf-bM-YBQ" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="aXM-F7-Spg"/>
@@ -46,7 +46,7 @@
                                                             <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-dp-hXW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4n-dp-hXW" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                         <rect key="frame" x="223" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="IVg-aH-acr"/>
@@ -93,7 +93,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eV-gX-ee1" customClass="BorderedView" customModule="AttestiOSApp" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="295" height="82"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-s4-RuT">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-s4-RuT" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="WY5-VF-LkX"/>
@@ -104,7 +104,7 @@
                                                             <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-6j-sjQ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LO-6j-sjQ" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
                                                         <rect key="frame" x="223" y="10" width="62" height="62"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="62" id="4oK-zI-SY8"/>

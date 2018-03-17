@@ -9,6 +9,8 @@
 import XCTest
 import Attest
 
+let HTTP_PORT_NUMBER = 48485 // This is also defined in AppDelegate. If port number needs to be changed, update both here and in AppDelegate.
+
 class SimpleUITest: XCTestCase {
         
     override func setUp() {
@@ -21,6 +23,6 @@ class SimpleUITest: XCTestCase {
     }
     
     func testUISimple() {
-        Attest.that(portNumber: 8080).isAccessible()
+        Attest.that(portNumber: HTTP_PORT_NUMBER).isAccessible()
     }
 }

@@ -87,7 +87,7 @@ public enum Demos: Int {
         case "NestedA11yElements":
             return RuleID.NestedA11yElements
         case "Overlap":
-            return RuleID.DontIntersect
+            return RuleID.Overlap
         case "SpeakableText":
             return RuleID.SpeakableText
         case "TouchTargetSize":
