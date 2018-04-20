@@ -38,7 +38,7 @@ class DemoUITest: XCTestCase {
     // Highlights a violation for one second
     func highlightViolation(_ violationName: String) {
                 
-        if let url = NSURL(string: "http://localhost:8080/api/highlight/\(violationName)") {
+        if let url = NSURL(string: "http://localhost:\(HTTP_PORT_NUMBER)/api/highlight/\(violationName)") {
             let group = DispatchGroup()
             group.enter()
             
@@ -53,7 +53,7 @@ class DemoUITest: XCTestCase {
             task.resume()
             group.wait()
 
-            let urlRequest = URLRequest(url: NSURL(string: "http://localhost:8080/api/remove_highlight")! as URL)
+            let urlRequest = URLRequest(url: NSURL(string: "http://localhost:\(HTTP_PORT_NUMBER)/api/remove_highlight")! as URL)
             URLSession.shared.dataTask(with: urlRequest).resume()
         }
     }

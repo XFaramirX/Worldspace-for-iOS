@@ -35,45 +35,9 @@ To keep from pushing the library to VCS systems, check out our framework fetch s
 
 [Curl WorldSpace Framework](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/Scripts/CurlFramework.sh)
 
-## Unit Testing Examples
+## Testing with WorldSpace for iOS
 
-Unit testing with the WorldSpace for iOS Framework is easy! Check out the examples below.
-
-[A simple Accessibility Test](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/SimpleTest.swift)
-
-[Ignore Specific Violations](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/IgnoreViolations.swift)
-
-[Custom Rules](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppTests/CustomRules.swift)
-
-## UI Instrumented Test Examples
-
-[Starting the WorldSpace HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)
-
-[A simple Accessibility Test](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppUITests/SimpleUITest.swift)
-
-[Ignore Specific Violations](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSAppUITests/IgnoreViolationsUITest.swift)
-
-[Highlight Violations During Instrumented Tests](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/AttestiOSAppUITests/DemoUITest.swift)
-
-## Test Using the HTTP Server
-
-After [starting the HTTP Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift), visit
-
-[http://localhost:8080/report/analyze.html](http://localhost:8080/report/analyze.html) to view results!
-
-## Test Using the Desktop Client
-[Starting the WorldSpace Server](https://github.com/dequelabs/Worldspace-for-iOS/blob/master/AttestiOSApp/AppDelegate.swift)
-
-[Syncing Results with the WorldSpace Desktop Client](https://dequeuniversity.com/guide/attest-mobile/1.0/using/manual-testing/desktop/analyzing/)
-
-## Test Using Calabash
-In XCode, build the "AttestiOSApp-cal" target for the simulator device that Calabash will use (iPhone 7 is default for Calabash).
-
-Next, run Calabash as you normally would.  If it hangs the first time you run it, exit out of Calabash and try again.
-
-[See an example of a Feature file using Attest here](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/features/AttestExample.feature)
-
-[See the Attest Calabash Step file here](https://github.com/dequelabs/Worldspace-for-iOS/blob/Calabash_Support/features/steps/Attest.rb)
+For more information on testing, please visit our [Wiki](https://github.com/dequelabs/Worldspace-for-iOS/wiki)!
 
 ## Known Issues
 
