@@ -24,7 +24,7 @@ export DEQUE_ANON_APIKEY=EMAILED_API_KEY
 Also add an environment variable into your .bash_profile with the version of the framework that you would like to fetch:
 
 ```bash
-export DEQUE_ATTEST_IOS_VERSION="1.2.1"
+export DEQUE_ATTEST_IOS_VERSION="1.2.2"
 ```
 
 Check out the list of releases for more information.
