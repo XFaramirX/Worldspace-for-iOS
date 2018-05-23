@@ -12,21 +12,21 @@ import Attest
 class DemoUITest: XCTestCase {
     
     // Maps the accessibility identifier of a demo with the expected violation(s) to occur
-    let NumberOfExpectedViolations: [String : [RuleID]] = [
-        "ConflictingTraits"         : [ RuleID.ConflictingTraits ],
-        "Contrast"                  : [ RuleID.ColorContrast ],
-        "ContrastAlphaBlend"        : [ RuleID.ColorContrast ],
-        "ContrastAlphaBlendText"    : [ RuleID.ColorContrast ],
-        "ContrastLargeText"         : [ RuleID.ColorContrast ],
-        "DynamicTypeSystemFont"     : [ RuleID.DynamicType ],
-        "ElementInFocusBox"         : UIDevice.current.userInterfaceIdiom == .pad ? [ RuleID.InHighlight, RuleID.Overlap ] : [ RuleID.InHighlight ],
-        "LabelActiveControls"       : [ RuleID.SpeakableText ],
-        "LabelAssociation"          : [ RuleID.AccessibilityHint ],
-        "LabelInformativeControls"  : [ RuleID.SpeakableText ],
-        "NestedElements"            : [ RuleID.Overlap, RuleID.NestedA11yElements ],
-        "OverlappingButton"         : [ RuleID.Overlap ],
-        "OverlappingLabel"          : [ RuleID.Overlap ],
-        "TouchTargetSize"           : [ RuleID.TouchTargetSize ]
+    let NumberOfExpectedViolations: [String : RuleID] = [
+        "ConflictingTraits"         : RuleID.ConflictingTraits,
+        "Contrast"                  : RuleID.ColorContrast,
+        "ContrastAlphaBlend"        : RuleID.ColorContrast,
+        "ContrastAlphaBlendText"    : RuleID.ColorContrast,
+        "ContrastLargeText"         : RuleID.ColorContrast,
+        "DynamicTypeSystemFont"     : RuleID.DynamicType,
+        "ElementInFocusBox"         : RuleID.InHighlight,
+        "LabelActiveControls"       : RuleID.SpeakableText,
+        "LabelAssociation"          : RuleID.AccessibilityHint,
+        "LabelInformativeControls"  : RuleID.SpeakableText,
+        "NestedElements"            : RuleID.NestedA11yElements,
+        "OverlappingButton"         : RuleID.Overlap,
+        "OverlappingLabel"          : RuleID.Overlap,
+        "TouchTargetSize"           : RuleID.TouchTargetSize
     ]
         
     override func setUp() {
@@ -70,7 +70,7 @@ class DemoUITest: XCTestCase {
         let app = XCUIApplication()
         
         // Loop through each demo listed in NumberOfExpectedViolations Dictionary
-        for (a11yIdentifier, ruleIDs) in NumberOfExpectedViolations {
+        for (a11yIdentifier, ruleID) in NumberOfExpectedViolations {
             
             // Open a demo
             app.tables.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
@@ -88,7 +88,7 @@ class DemoUITest: XCTestCase {
                         highlightViolation(violation.target)
                     }
                     
-                    if ruleIDs.contains(ruleResult.rule.ruleId) {
+                    if ruleID == ruleResult.rule.ruleId {
                         XCTAssertEqual(1, ruleResult.violations.count, ruleResult.description)
                     } else {
                         XCTAssertEqual(0, ruleResult.violations.count, ruleResult.description)
