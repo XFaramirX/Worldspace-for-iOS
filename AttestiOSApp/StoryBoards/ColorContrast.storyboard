@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,19 +24,19 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Contrast Alpha Blend Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-a1-UbL">
-                                        <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGo-qm-4hU" userLabel="Broken View" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="51" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="50.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXX-SV-h4B" userLabel="Alpha">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failing Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaT-Sx-s4L">
-                                                        <rect key="frame" x="105" y="10" width="86" height="21"/>
+                                                        <rect key="frame" x="105.5" y="10" width="85.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -59,19 +59,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The background color of the view above has opacity less than 1.  The &quot;Failing Text&quot; ratio is less than 4.5:1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CP-IE-nKI">
-                                        <rect key="frame" x="20" y="122" width="335" height="64.5"/>
+                                        <rect key="frame" x="20" y="121" width="335" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APn-as-OVi" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="196.5" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="195.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-fn-Jqu">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passing Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8u-V1-zh3">
-                                                        <rect key="frame" x="10" y="10" width="275" height="21"/>
+                                                        <rect key="frame" x="10" y="10" width="275" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here, the text ratio is much higher than 4.5:1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHj-1H-t0g">
-                                        <rect key="frame" x="20" y="268" width="335" height="42.5"/>
+                                        <rect key="frame" x="20" y="266.5" width="335" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -151,13 +151,13 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrast Alpha Blend Text Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5I-F6-eL6">
-                                        <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-fr-B0m" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="51" width="315" height="60.5"/>
+                                        <rect key="frame" x="30" y="50.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4W-9X-amR">
                                                 <rect key="frame" x="10" y="10" width="295" height="40.5"/>
@@ -188,13 +188,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The label's text has an alpha much less than 1. Color contrast ratio is much less than 4.5:1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvT-VF-VeQ">
-                                        <rect key="frame" x="20" y="121.5" width="335" height="64.5"/>
+                                        <rect key="frame" x="20" y="121" width="335" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urT-Qc-95s" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="196" width="315" height="60.5"/>
+                                        <rect key="frame" x="30" y="195.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-uy-uFB">
                                                 <rect key="frame" x="10" y="10" width="295" height="40.5"/>
@@ -225,7 +225,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here, we have a much better color contrast." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SoA-Gz-C3r">
-                                        <rect key="frame" x="20" y="266" width="335" height="20.5"/>
+                                        <rect key="frame" x="20" y="265.5" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -287,13 +287,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36f-pI-ARv" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="50.5" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="50.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdr-Al-ZSa">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grey on Black " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krd-hc-HHt">
-                                                        <rect key="frame" x="93" y="10" width="110.5" height="21"/>
+                                                        <rect key="frame" x="93" y="10" width="110.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -316,19 +316,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The background is black and the text is dark gray.  This has a color contrast ratio of 3.8:1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYT-ha-ncv">
-                                        <rect key="frame" x="20" y="121.5" width="335" height="64.5"/>
+                                        <rect key="frame" x="20" y="121" width="335" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oX-F1-buv" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="196" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="195.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-Bj-Z8a">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White on black" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI5-nN-GWU">
-                                                        <rect key="frame" x="91.5" y="10" width="113.5" height="21"/>
+                                                        <rect key="frame" x="91.5" y="10" width="113.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -351,7 +351,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now the text is white on a black background. The color contrast ratio is 21:1." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smf-Ep-1fs">
-                                        <rect key="frame" x="20" y="267" width="335" height="42.5"/>
+                                        <rect key="frame" x="20" y="266" width="335" height="42.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -407,19 +407,19 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrast Large Text Example" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us9-8i-6TJ">
-                                        <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qh-PO-Q7e" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="51" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="50.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHp-CP-0aP">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failing Bold Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHh-6U-GrU">
-                                                        <rect key="frame" x="82.5" y="10" width="130" height="21"/>
+                                                        <rect key="frame" x="82.5" y="10" width="130" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -442,20 +442,20 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZA-Sg-bJD">
-                                        <rect key="frame" x="20" y="122" width="335" height="108.5"/>
+                                        <rect key="frame" x="20" y="121" width="335" height="108.5"/>
                                         <string key="text">Large text, according to WCAG2.0 specifications, is text that is at least 18pt or 14pt and bold. It needs a color contrast ratio of at least 3.0:1.  The labels above have a color contrast ratio of 2.5:1.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AS6-Ro-Snb" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="240.5" width="315" height="61"/>
+                                        <rect key="frame" x="30" y="239.5" width="315" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndh-VE-NzU">
-                                                <rect key="frame" x="10" y="10" width="295" height="41"/>
+                                                <rect key="frame" x="10" y="10" width="295" height="40.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passing Bold Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-RZ-GEA">
-                                                        <rect key="frame" x="10" y="10" width="275" height="21"/>
+                                                        <rect key="frame" x="10" y="10" width="275" height="20.5"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -479,7 +479,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The labels above, which are darker than the failing ones above, now have a color contrast ratio of 3.2:1 (passing WCAG2.0)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKQ-4D-NS8">
-                                        <rect key="frame" x="20" y="311.5" width="335" height="64.5"/>
+                                        <rect key="frame" x="20" y="310" width="335" height="64.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

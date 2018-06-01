@@ -36,6 +36,9 @@
 		0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEC61F9E6EA80059DB83 /* MainViewController.swift */; };
 		0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEE81F9E6EDB0059DB83 /* BorderedView.swift */; };
 		B4A029701FAA3E0D0057D4C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Constants.swift */; };
+		EE0BE2F320BDA575009BCC9B /* OpenModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0BE2F220BDA575009BCC9B /* OpenModalViewController.swift */; };
+		EE0BE2F520BDA870009BCC9B /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0BE2F420BDA870009BCC9B /* ModalViewController.swift */; };
+		EE0BE2F720BDAAAE009BCC9B /* ExtraTestCases.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0BE2F620BDAAAE009BCC9B /* ExtraTestCases.storyboard */; };
 		EE5BB7E21FBC887800486581 /* VoiceOverNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */; };
 		EE5BB7E31FBC887800486581 /* ElementInFocusBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */; };
 		EE5BB7E41FBC887800486581 /* InformativeFocusableControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */; };
@@ -78,6 +81,7 @@
 		EEE2FC172034EB6E004F3913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCBDF081F9E6F120059DB83 /* Main.storyboard */; };
 		EEE2FC192034EB6E004F3913 /* Attest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EEE2FC212034EE4E004F3913 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE2FC202034EE44004F3913 /* CFNetwork.framework */; };
+		EEEC5DDD20C18F680020C645 /* PerformanceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC5DDC20C18F680020C645 /* PerformanceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +184,9 @@
 		0FCBDF041F9E6EDD0059DB83 /* TouchTargetSize.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TouchTargetSize.storyboard; sourceTree = "<group>"; };
 		0FCBDF081F9E6F120059DB83 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0FCBDF091F9E6F130059DB83 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE0BE2F220BDA575009BCC9B /* OpenModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenModalViewController.swift; sourceTree = "<group>"; };
+		EE0BE2F420BDA870009BCC9B /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		EE0BE2F620BDAAAE009BCC9B /* ExtraTestCases.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExtraTestCases.storyboard; sourceTree = "<group>"; };
 		EE5BB7DC1FBC887800486581 /* VoiceOverNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceOverNavigation.swift; sourceTree = "<group>"; };
 		EE5BB7DD1FBC887800486581 /* ElementInFocusBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementInFocusBox.swift; sourceTree = "<group>"; };
 		EE5BB7DE1FBC887800486581 /* InformativeFocusableControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformativeFocusableControls.swift; sourceTree = "<group>"; };
@@ -194,6 +201,7 @@
 		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
 		EEE2FC1D2034EB6E004F3913 /* AttestiOSApp-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AttestiOSApp-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE2FC202034EE44004F3913 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EEEC5DDC20C18F680020C645 /* PerformanceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +317,7 @@
 				0FB881B51FA8E4F70024E479 /* StoryBoards */,
 				0FB881B41FA8E48B0024E479 /* ViewControllers */,
 				0FB881B31FA8E2F00024E479 /* Views */,
+				EE0BE2F820BDAB91009BCC9B /* Extra Tests */,
 				0F5E4FD31F9E86D20054CB04 /* Media.xcassets */,
 			);
 			path = AttestiOSApp;
@@ -325,6 +334,7 @@
 				0F12A7061FBB4DAD00932780 /* IgnoreRules.swift */,
 				0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */,
 				0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */,
+				EEEC5DDC20C18F680020C645 /* PerformanceTest.swift */,
 			);
 			path = AttestiOSAppTests;
 			sourceTree = "<group>";
@@ -339,6 +349,16 @@
 				EE8CF108201FB97F0020F398 /* DemoUITest.swift */,
 			);
 			path = AttestiOSAppUITests;
+			sourceTree = "<group>";
+		};
+		EE0BE2F820BDAB91009BCC9B /* Extra Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EE0BE2F620BDAAAE009BCC9B /* ExtraTestCases.storyboard */,
+				EE0BE2F220BDA575009BCC9B /* OpenModalViewController.swift */,
+				EE0BE2F420BDA870009BCC9B /* ModalViewController.swift */,
+			);
+			path = "Extra Tests";
 			sourceTree = "<group>";
 		};
 		EEE2FC1F2034EE44004F3913 /* Frameworks */ = {
@@ -374,11 +394,11 @@
 			buildConfigurationList = 0FCBDEB11F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "AttestiOSApp" */;
 			buildPhases = (
 				0F4249F51FB0BBF400B8CCD7 /* Build Attest Library */,
-				0FC2179420B60BD700ACE938 /* Open Accessibility Inspector */,
 				0FCBDE851F9E6C350059DB83 /* Sources */,
 				0FCBDE861F9E6C350059DB83 /* Frameworks */,
 				0FCBDE871F9E6C350059DB83 /* Resources */,
 				0F4F119C1FA265E6005D6D4B /* Embed Frameworks */,
+				EE3C04D220C1CE0D00F807F7 /* Open Accessibility Inspector */,
 			);
 			buildRules = (
 			);
@@ -515,6 +535,7 @@
 				0F5E4FD41F9E86D20054CB04 /* Media.xcassets in Resources */,
 				0F5E4FB11F9E85290054CB04 /* ColorContrast.storyboard in Resources */,
 				0F5E4FB21F9E85290054CB04 /* ConflictingTraits.storyboard in Resources */,
+				EE0BE2F720BDAAAE009BCC9B /* ExtraTestCases.storyboard in Resources */,
 				0F5E4FB31F9E85290054CB04 /* Overlap.storyboard in Resources */,
 				0F5E4FB41F9E85290054CB04 /* DynamicType.storyboard in Resources */,
 				0F5E4FB51F9E85290054CB04 /* InHighlight.storyboard in Resources */,
@@ -591,20 +612,6 @@
 			shellPath = /bin/sh;
 			shellScript = "open /Applications/Xcode.app/Contents/Applications/Accessibility\\ Inspector.app/";
 		};
-		0FC2179420B60BD700ACE938 /* Open Accessibility Inspector */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Open Accessibility Inspector";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "open /Applications/Xcode.app/Contents/Applications/Accessibility\\ Inspector.app/";
-		};
 		EE098A212036025300134C95 /* Download Calabash Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,6 +625,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ -d \"calabash.framework\" ]; then\n    exit 0\nfi\n\neval \"$(rbenv init -)\"\nbundle\nbundle exec calabash-ios download";
+		};
+		EE3C04D220C1CE0D00F807F7 /* Open Accessibility Inspector */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Open Accessibility Inspector";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open /Applications/Xcode.app/Contents/Applications/Accessibility\\ Inspector.app/";
 		};
 		EEE2FBF92034EB6E004F3913 /* Build Attest Library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -643,12 +664,14 @@
 				EE5BB7E51FBC887800486581 /* LabelActiveControls.swift in Sources */,
 				0F5E4FBA1F9E857D0054CB04 /* A11yStepper.swift in Sources */,
 				0F4F11A71FA2A437005D6D4B /* TypeAdjustingView.swift in Sources */,
+				EE0BE2F520BDA870009BCC9B /* ModalViewController.swift in Sources */,
 				EE5BB7E71FBC887800486581 /* TouchTargetSize.swift in Sources */,
 				0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */,
 				0FCBDECF1F9E6EA80059DB83 /* MainViewController.swift in Sources */,
 				0FCBDECC1F9E6EA80059DB83 /* MenuViewController.swift in Sources */,
 				EE5BB7E41FBC887800486581 /* InformativeFocusableControls.swift in Sources */,
 				EEA75F172052E8BA003721DE /* DequeButton.swift in Sources */,
+				EE0BE2F320BDA575009BCC9B /* OpenModalViewController.swift in Sources */,
 				EE5BB7E31FBC887800486581 /* ElementInFocusBox.swift in Sources */,
 				0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */,
 				0FCBDECB1F9E6EA80059DB83 /* Constants.swift in Sources */,
@@ -663,6 +686,7 @@
 			files = (
 				B4A029701FAA3E0D0057D4C2 /* Constants.swift in Sources */,
 				EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */,
+				EEEC5DDD20C18F680020C645 /* PerformanceTest.swift in Sources */,
 				0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */,
 				0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */,
 				0F12A7071FBB4DAD00932780 /* IgnoreRules.swift in Sources */,
