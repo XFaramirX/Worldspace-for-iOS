@@ -2,7 +2,7 @@ version: 2
 jobs:
     build-and-test:
         macos:
-            xcode: "9.1.0"
+            xcode: "9.2.0"
 
         steps:
             - checkout
@@ -20,6 +20,12 @@ jobs:
                 environment:
                     SCAN_DEVICE: iPhone X
                     SCAN_SCHEME: AttestiOSApp
+
+            - run:
+                name: Test Free Version of Framework Access
+                command: |
+                    curl -s -H "X-JFrog-Art-Api: ${DEQUE_FREE_APIKEY}" -O "https://agora.dequecloud.com/artifactory/AttestIOSFree/framework/Xcode9.2/Attest.framework-${DEQUE_ATTEST_IOS_VERSION}.zip"
+                    unzip Attest.framework-${DEQUE_ATTEST_IOS_VERSION}.zip
 
             - store_test_results:
                 path: reports/report.xml
