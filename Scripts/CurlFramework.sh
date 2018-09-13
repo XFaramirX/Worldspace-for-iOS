@@ -19,6 +19,14 @@ else
     XCODE_VERSION=$DEQUE_ATTEST_XCODE_VERSION
 fi
 
+if [ "$XCODE_VERSION" = "Xcode9.3.1" ]; then
+    XCODE_VERSION = "Xcode9.3"
+fi 
+
+if [ "$XCODE_VERSION" = "Xcode9.4.1" ]; then
+    XCODE_VERSION="Xcode9.4"
+fi 
+
 if [[ -z "${DEQUE_ATTEST_LIBRARY_NAME}" ]]; then
     LIBRARY="AttestIOSFree"
 else

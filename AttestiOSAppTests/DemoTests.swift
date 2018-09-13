@@ -15,10 +15,10 @@ class DemoTests: XCTestCase {
 
                 for ruleResult in result.ruleResults {
                     
-                    let message = "\(demo.storyBoardName()) \(demo.viewControllerName()) \(ruleResult.description)"
-
+                    let message = "\(demo.storyBoardName()) \(ruleResult.description)"
+                    
                     if (ruleResult.rule.ruleId == demo.applicableRule()) {
-                        XCTAssertEqual(1, ruleResult.violations.count, message)
+                        XCTAssertEqual(demo.numberOfViolations(), ruleResult.violations.count, message)
                     } else {
                         XCTAssertEqual(0, ruleResult.violations.count, message)
                     }

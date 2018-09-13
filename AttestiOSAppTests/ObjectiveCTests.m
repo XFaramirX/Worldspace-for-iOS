@@ -24,22 +24,22 @@
 
 /* Ignore a violation for a particular rule. */
 - (void) testAndIgnoreSingleViolation {
-    [[Attest thatWithStoryBoardName:@"AccessibilityHint" viewControllerID:@"LabelAssociation" bundle:NULL]
+    [[Attest thatWithStoryBoardName:@"ColorContrast" viewControllerID:@"ColorContrast" bundle:NULL]
      isAccessible: ^(Result* result) {
          for (RuleResult* ruleResult in result.ruleResults) {
              switch (ruleResult.rule.ruleId) {
                  
                  // We're allowing one accessibility hint violation
-                 case RuleIDAccessibilityHint:
-                     XCTAssertEqual(1, ruleResult.violations.count, @"%@", ruleResult.description);
+                 case RuleIDColorContrast:
+                     XCTAssertEqual(4, ruleResult.violations.count, @"%@", ruleResult.description);
                      break;
                  
-                 // We're allowing this rule to be inapplicable to the view controller
-                 case RuleIDTouchTargetSize:
+                 // We're allowing this rule to be inapplicable for this view controller
+                 case RuleIDImageViewName:
                     XCTAssertEqual(ImpactInapplicable, ruleResult.impact, @"%@", ruleResult.description);
                     break;
 
-                // We're allowing this rule to be inapplicable to the view controller
+                // We're allowing this rule to be inapplicable for this view controller
                  case RuleIDCustomRule:
                     XCTAssertEqual(ImpactInapplicable, ruleResult.impact, @"%@", ruleResult.description);
                     break;

@@ -11,8 +11,8 @@ import Attest
 
 class IgnoreRulesUITest: XCTestCase {
     
-    // Accessibililty identifier of ContrastAlphaBlend Demo
-    let CONTRAST_ALPHA_BLEND = "ContrastAlphaBlend"
+    // Accessibililty identifier of Color Contrast Demo
+    let COLOR_CONTRAST = "Color Contrast"
         
     override func setUp() {
         super.setUp()
@@ -20,22 +20,21 @@ class IgnoreRulesUITest: XCTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
         
-        XCUIApplication().tables.cells.matching(identifier: CONTRAST_ALPHA_BLEND).firstMatch.tap() // Open Contrast Alpha Blend Demo
+        XCUIApplication().tables.cells.matching(identifier: COLOR_CONTRAST).firstMatch.tap() // Open Contrast Alpha Blend Demo
     }
     
     //Set up a list of Rule IDs to ignore.
     static var ignoredRuleIDs: [RuleID] = [
         RuleID.ColorContrast,
-        RuleID.AccessibilityHint,
-        RuleID.TouchTargetSize,
+        RuleID.ImageViewName,
         RuleID.CustomRule
     ];
     
     //Set up a static function that utilizes the list of ignored IDs
     static func resultConsumer(attestResult: Attest.Result) {
         for ruleResult in attestResult.ruleResults {
-            if (!ignoredRuleIDs.contains(ruleResult.rule.ruleId)) {
-                XCTAssertEqual(Impact.Pass.name(), ruleResult.impact.name(), ruleResult.description)
+            if !ignoredRuleIDs.contains(ruleResult.rule.ruleId) {
+                XCTAssertEqual(Impact.Pass.toString(), ruleResult.impact.toString(), ruleResult.description)
             }
         }
     }

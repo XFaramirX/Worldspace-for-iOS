@@ -10,13 +10,10 @@ import UIKit
 
 @IBDesignable internal class BorderedView: UIView {
     
-    internal enum ViewType {
-        case Broken
-        case Fixed
-        case Example
+    public var borderColor: UIColor {
+        get { return UIColor.DequeGray }
+        set { }
     }
-    
-    internal var type = ViewType.Example
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,33 +25,27 @@ import UIKit
         self.setUp()
     }
     
-    fileprivate func setUp() {
+    private func setUp() {
+        
         self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2
-        
-        switch(type) {
-            case ViewType.Broken: self.layer.borderColor = (BROKEN_COLOR).cgColor
-            case ViewType.Fixed: self.layer.borderColor = (FIXED_COLOR).cgColor
-            case ViewType.Example: self.layer.borderColor = UIColor.lightGray.cgColor
-        }
+        self.layer.borderColor = borderColor.cgColor
     }
 }
 
 class BrokenView: BorderedView {
-    override internal var type: BorderedView.ViewType {
-        get {
-            return BorderedView.ViewType.Broken
-        }
-        set {}
+    
+    override public var borderColor: UIColor {
+        get { return UIColor.DequeRed }
+        set { }
     }
 }
 
 class FixedView: BorderedView {
-    override internal var type: BorderedView.ViewType {
-        get {
-            return BorderedView.ViewType.Fixed
-        }
-        set {}
+    
+    override public var borderColor: UIColor {
+        get { return UIColor.DequeGreen }
+        set { }
     }
 }

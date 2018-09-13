@@ -11,15 +11,15 @@ import Attest
 
 class IgnoreViolationsUITest: XCTestCase {
     
-    // Accessibility Identifier of LabelAssociation Demo
-    let LABEL_ASSOCIATION = "LabelAssociation"
+    // Accessibility Identifier of Color Contrast Demo
+    let COLOR_CONTRAST = "Color Contrast"
         
     override func setUp() {
         super.setUp()
 
         continueAfterFailure = false
         XCUIApplication().launch()
-        XCUIApplication().tables.cells.matching(identifier: LABEL_ASSOCIATION).firstMatch.tap() // Open Label Association Demo
+        XCUIApplication().tables.cells.matching(identifier: COLOR_CONTRAST).firstMatch.tap() // Open Label Association Demo
     }
     
     /* Ignore a violation for a particular rule. */
@@ -30,15 +30,14 @@ class IgnoreViolationsUITest: XCTestCase {
             print(result.description)
             
             for ruleResult in result.ruleResults {
-                switch (ruleResult.rule.ruleId) {
-                case .AccessibilityHint:
-                    //We're allowing one accessibility hint violation
-                    XCTAssertEqual(1, ruleResult.violations.count, ruleResult.description)
-                default:
-                    // Everything else must pass, be incomplete, or inapplicable
-                    XCTAssert(Impact.Pass.name() == ruleResult.impact.name() ||
-                        Impact.Inapplicable.name() == ruleResult.impact.name() ||
-                        Impact.Incomplete.name() == ruleResult.impact.name(), ruleResult.description)
+                switch ruleResult.rule.ruleId {
+                    case .ColorContrast:
+                        //We're allowing one accessibility hint violation
+                        XCTAssertEqual(4, ruleResult.violations.count, ruleResult.description)
+                    default:
+                        // Everything else must pass, be incomplete, or inapplicable
+                        XCTAssert(Impact.Pass.toString() == ruleResult.impact.toString() ||
+                            Impact.Inapplicable.toString() == ruleResult.impact.toString())
                 }
             }
         })

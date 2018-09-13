@@ -37,7 +37,7 @@ class CustomRules: XCTestCase {
         //Up the verbosity on these reports just a little bit.
         Rule.Result.withDetails = true
 
-        Attest.that(storyBoardName: "AccessibilityHint").isAccessible { (result) in
+        Attest.that(storyBoardName: "ColorContrast").isAccessible { (result) in
             //This is obviously going to fail hard, so don't assert!
             print(result.description)
         }

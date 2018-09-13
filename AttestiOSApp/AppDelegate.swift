@@ -14,14 +14,10 @@ import Attest
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     static let HTTP_PORT_NUMBER = 48485
-    static let WEBSOCKET_PORT_NUMBER: UInt = 48484
 
     var window: UIWindow?
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        
-        //Start the Attest Server in debug mode to use the desktop client.
-        Attest.startServer(AppDelegate.WEBSOCKET_PORT_NUMBER)
         
         // Start the Attest HTTP Server in debug mode to use your browser as the desktop client.
         Attest.startHTTPServer(AppDelegate.HTTP_PORT_NUMBER)
@@ -37,13 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //
         // The call below is equal to Attest.startAuditGenerator()
         Attest.startAuditGenerator(inSeconds: 1, withAuditFormat: { (entry: Entry) -> String in
-            return "\(entry.impact.name().uppercased()) - \(entry.ruleId.name())(\(entry.a11yIdentifier)) \(entry.successCriteria): \(entry.ruleDescription)\n\t\(entry.view.description)"
+            return "\(entry.impact.toString().uppercased()) - \(entry.ruleId.toString())(\(entry.a11yIdentifier)) \(entry.tags): \(entry.ruleDescription)\n\t\(entry.view.description)"
         })
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
         
-
         // Stopping the Audit Generator will allow you to retrieve the complete audit in JSON format.
         if let jsonString = Attest.stopAuditGenerator()?.description {
             print(jsonString)

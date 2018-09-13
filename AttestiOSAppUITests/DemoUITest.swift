@@ -11,22 +11,8 @@ import Attest
 
 class DemoUITest: XCTestCase {
     
-    // Maps the accessibility identifier of a demo with the expected violation(s) to occur
-    let NumberOfExpectedViolations: [String : RuleID] = [
-        "ConflictingTraits"         : RuleID.ConflictingTraits,
-        "Contrast"                  : RuleID.ColorContrast,
-        "ContrastAlphaBlend"        : RuleID.ColorContrast,
-        "ContrastAlphaBlendText"    : RuleID.ColorContrast,
-        "ContrastLargeText"         : RuleID.ColorContrast,
-        "DynamicTypeSystemFont"     : RuleID.DynamicType,
-        "ElementInFocusBox"         : RuleID.InHighlight,
-        "LabelActiveControls"       : RuleID.SpeakableText,
-        "LabelAssociation"          : RuleID.AccessibilityHint,
-        "LabelInformativeControls"  : RuleID.SpeakableText,
-        "NestedElements"            : RuleID.NestedA11yElements,
-        "OverlappingButton"         : RuleID.Overlap,
-        "OverlappingLabel"          : RuleID.Overlap,
-        "TouchTargetSize"           : RuleID.TouchTargetSize
+    let DemoToViolationCount = [
+        "Color Contrast"     : (RuleID.ColorContrast, 4),
     ]
         
     override func setUp() {
@@ -70,7 +56,7 @@ class DemoUITest: XCTestCase {
         let app = XCUIApplication()
         
         // Loop through each demo listed in NumberOfExpectedViolations Dictionary
-        for (a11yIdentifier, ruleID) in NumberOfExpectedViolations {
+        for (a11yIdentifier, pair) in DemoToViolationCount {
             
             // Open a demo
             app.tables.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
@@ -88,8 +74,8 @@ class DemoUITest: XCTestCase {
                         highlightViolation(violation.target)
                     }
                     
-                    if ruleID == ruleResult.rule.ruleId {
-                        XCTAssertEqual(1, ruleResult.violations.count, ruleResult.description)
+                    if pair.0 == ruleResult.rule.ruleId {
+                        XCTAssertEqual(pair.1, ruleResult.violations.count, ruleResult.description)
                     } else {
                         XCTAssertEqual(0, ruleResult.violations.count, ruleResult.description)
                     }
